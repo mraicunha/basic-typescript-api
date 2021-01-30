@@ -37,7 +37,8 @@ class App {
         });
     }
     database() {
-        mongoose.connection.openUri('mongodb://127.0.0.1/db_name', {
+        mongoose.connection.openUri('mongodb://mrai:log102030@127.0.0.1/db_basic_api', {
+            authSource: 'admin',
             useNewUrlParser: true,
             useUnifiedTopology: true,
             useCreateIndex: true,
